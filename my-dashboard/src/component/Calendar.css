@@ -1,0 +1,147 @@
+/* Calendar.css – polished FullCalendar UI overrides */
+
+.fc {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.fc-toolbar-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #1f2937;
+}
+
+.fc-button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.fc-button:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+.fc-button:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.fc .fc-button-primary:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.fc-event {
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-weight: 500;
+  font-size: 0.875rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border: none;
+  transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fc-event:hover {
+  filter: brightness(1.1);
+  transform: scale(1.02);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.fc-day-today {
+  background-color: #fffacc !important; /* brighter for better contrast */
+  border: 1px solid #fde68a;
+  border-radius: 4px;
+}
+
+.fc-daygrid-event-dot {
+  display: none;
+}
+
+.fc-scrollgrid,
+.fc-col-header-cell,
+.fc-daygrid-day-number {
+  font-size: 13px;
+  color: #374151;
+}
+
+.fc-daygrid-day:hover {
+  background-color: #f3f4f6;
+  cursor: pointer;
+}
+
+/* Mobile Responsive Tweaks */
+@media (max-width: 480px) {
+  .fc {
+    font-size: 12px;
+  }
+
+  .fc-toolbar-title {
+    font-size: 1rem;
+  }
+
+  .fc-button {
+    padding: 4px 10px;
+    font-size: 0.875rem;
+  }
+}
+
+.dark .fc {
+  background-color: #1e293b;
+  color: #e5e7eb;
+}
+
+.dark .fc-toolbar-title {
+  color: #f3f4f6;
+}
+
+.dark .fc-button {
+  background-color: #2563eb;
+  color: #f9fafb;
+}
+
+.dark .fc-button:hover {
+  background-color: #1d4ed8;
+}
+
+.dark .fc-button:focus-visible {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
+
+.dark .fc .fc-button-primary:disabled {
+  background-color: #4b5563;
+  color: #9ca3af;
+}
+
+.dark .fc-event {
+  background-color: #334155;
+  color: #f1f5f9;
+  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.05);
+}
+
+.dark .fc-event:hover {
+  background-color: #475569;
+}
+
+.dark .fc-day-today {
+  background-color: #facc15 !important;
+  color: #111827;
+  border: 1px solid #fef08a;
+}
+
+.dark .fc-daygrid-day-number,
+.dark .fc-col-header-cell,
+.dark .fc-scrollgrid {
+  color: #cbd5e1;
+}
+
+.dark .fc-daygrid-day:hover {
+  background-color: #334155;
+}
