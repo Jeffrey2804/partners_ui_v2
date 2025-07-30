@@ -80,8 +80,8 @@ const LoginPage = () => {
           onChange={(e) => setRole(e.target.value)}
           className="w-full p-3 border border-gray-300 dark:border-gray-600 rounded bg-white dark:bg-gray-700 text-sm"
         >
-          <option value="User">User</option>
-          <option value="Admin">Admin</option>
+          <option value="User">Loan Officer</option>
+          <option value="Admin">Loan Officer Admin</option>
           <option value="Production Partner">Production Partner</option>
         </select>
 

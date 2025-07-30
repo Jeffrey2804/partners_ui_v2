@@ -753,14 +753,15 @@ const categorizeLeadsByStage = (leads) => {
     categorized[stage.title] = [];
   });
 
-  console.log('🔍 Processing leads:', leads.length);
+  //console.log('🔍 Processing leads:', leads.length);
 
   leads.forEach((lead, index) => {
-    console.log(`🔍 Processing lead ${index + 1}:`, lead);
+   // console.log(`🔍 Processing lead ${index + 1}:`, lead);
     
     // Get all tags from the lead (don't clean them yet to preserve original tags)
     const rawTags = lead.customField?.tags || lead.tags || [];
-    console.log(`🔍 Lead ${index + 1} original tags:`, rawTags);
+    console.log("Raw Tags" + rawTags)
+    //console.log(`🔍 Lead ${index + 1} original tags:`, rawTags);
     
     // Determine stage based on tags and custom fields
     let stage = 'New Lead'; // Default stage
